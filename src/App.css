@@ -96,6 +96,14 @@ a {
   cursor: pointer;
 }
 
+.nav-links a.active-link {
+  color: #60a5fa;
+}
+
+.nav-links a.active-link::after {
+  width: 100%;
+}
+
 /* Navbar Responsive */
 
 @media (max-width: 650px) {
