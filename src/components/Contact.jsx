@@ -16,7 +16,7 @@ function Contact() {
           </p>
 
           <div className="contact-info">
-            <p>📧 Contact me through this form</p>
+            <p>📧 chandrimapriya520@gmail.com</p>
             <p>📍 Sylhet, Bangladesh</p>
           </div>
         </div>
