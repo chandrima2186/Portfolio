@@ -1,4 +1,3 @@
-
 function Projects() {
   const projects = [
     {
@@ -6,16 +5,17 @@ function Projects() {
       title: "CampusEventHub",
       description:
         "A university event management platform where students can explore and register for academic and cultural events.",
-      technologies: "React • Node.js • MySQL"
+      technologies: "React • Node.js • MySQL",
+      link: "https://github.com/chandrima2186/Campus_event_hub"
     },
     {
       number: "02",
       title: "Personal Portfolio",
       description:
         "A responsive personal portfolio website designed to showcase my skills, projects and academic journey.",
-      technologies: "React • JavaScript • CSS"
-    },
-   
+      technologies: "React • JavaScript • CSS",
+      link: "https://portfolio-flame-phi-60.vercel.app/"
+    }
   ];
 
   return (
@@ -40,9 +40,14 @@ function Projects() {
               {project.technologies}
             </div>
 
-            <button className="project-btn">
+            <a
+              href={project.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="project-btn"
+            >
               View Project →
-            </button>
+            </a>
           </div>
         ))}
       </div>
