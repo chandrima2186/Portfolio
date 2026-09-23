@@ -22,35 +22,67 @@ a {
   top: 0;
   z-index: 1000;
 
+  height: 70px;
+  padding: 0 8%;
+
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
 
-  padding: 20px 8%;
+  background: rgba(15, 23, 42, 0.92);
+  backdrop-filter: blur(12px);
 
-  background: #0f172a;
   border-bottom: 1px solid #1e293b;
 }
 
 .logo {
-  font-size: 28px;
-  font-weight: bold;
+  color: #f8fafc;
+  font-size: 25px;
+  font-weight: 700;
+  text-decoration: none;
+  letter-spacing: -1px;
+}
+
+.logo span {
   color: #60a5fa;
 }
 
 .nav-links {
   display: flex;
-  gap: 30px;
+  align-items: center;
+  gap: 32px;
 }
 
 .nav-links a {
-  color: #cbd5e1;
-  font-size: 15px;
+  position: relative;
+
+  color: #94a3b8;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+
   transition: 0.3s;
 }
 
 .nav-links a:hover {
-  color: #60a5fa;
+  color: #f8fafc;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+
+  width: 0;
+  height: 2px;
+
+  background: #60a5fa;
+  transition: 0.3s;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
 }
 
 .menu-btn {
@@ -59,10 +91,47 @@ a {
   background: none;
   border: none;
 
-  color: white;
-  font-size: 28px;
-
+  color: #f8fafc;
+  font-size: 25px;
   cursor: pointer;
+}
+
+/* Navbar Responsive */
+
+@media (max-width: 650px) {
+  .navbar {
+    padding: 0 5%;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 70px;
+    left: 0;
+
+    width: 100%;
+
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 22px;
+
+    padding: 25px 0;
+
+    background: #0f172a;
+    border-bottom: 1px solid #1e293b;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links a {
+    font-size: 15px;
+  }
 }
 
 /* ================= HOME ================= */
