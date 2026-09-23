@@ -1,4 +1,3 @@
-
 function Contact() {
   return (
     <section className="section contact-section" id="contact">
@@ -17,27 +16,37 @@ function Contact() {
           </p>
 
           <div className="contact-info">
-            <p>📧 chandrimapriya520@gmail.com</p>
+            <p>📧 Contact me through this form</p>
             <p>📍 Sylhet, Bangladesh</p>
           </div>
         </div>
 
-        <form className="contact-form">
+        <form
+          className="contact-form"
+          action="https://formspree.io/f/xaenjllr"
+          method="POST"
+        >
           <input
             type="text"
+            name="name"
             placeholder="Your Name"
+            required
           />
 
           <input
             type="email"
+            name="email"
             placeholder="Your Email"
+            required
           />
 
           <textarea
+            name="message"
             placeholder="Your Message"
+            required
           ></textarea>
 
-          <button type="button" className="btn">
+          <button type="submit" className="btn">
             Send Message
           </button>
         </form>
@@ -47,4 +56,3 @@ function Contact() {
 }
 
 export default Contact;
-
