@@ -1,0 +1,88 @@
+/* ================= COMMON ================= */
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0f172a;
+  color: #f8fafc;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Common Section */
+
+.section {
+  padding: 90px 8%;
+}
+
+.section-title {
+  margin-bottom: 50px;
+}
+
+.section-title p {
+  color: #60a5fa;
+  letter-spacing: 3px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.section-title h2 {
+  font-size: 42px;
+  margin: 10px 0;
+}
+
+/* Common Buttons */
+
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+
+  background: #60a5fa;
+  border: 1px solid #60a5fa;
+  border-radius: 8px;
+
+  color: #0f172a;
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+}
+
+.btn.outline {
+  background: transparent;
+  color: #60a5fa;
+}
+
+.btn.outline:hover {
+  background: #60a5fa;
+  color: #0f172a;
+}
+
+/* Footer */
+
+footer {
+  text-align: center;
+  padding: 25px;
+
+  background: #0f172a;
+
+  border-top: 1px solid #1e293b;
+
+  color: #64748b;
+}
+
+footer p {
+  margin: 0;
+}

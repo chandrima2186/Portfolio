@@ -1,0 +1,192 @@
+/* ================= THEME TOGGLE ================= */
+
+.theme-btn {
+  background: #111827;
+
+  border: 1px solid #1e293b;
+
+  color: #f8fafc;
+
+  width: 38px;
+  height: 38px;
+
+  border-radius: 50%;
+
+  cursor: pointer;
+
+  font-size: 18px;
+
+  transition: all 0.3s ease;
+}
+
+.theme-btn:hover {
+  border-color: #60a5fa;
+
+  color: #60a5fa;
+}
+
+/* ================= LIGHT MODE ================= */
+
+body.light-mode {
+  background: #f8fafc;
+
+  color: #0f172a;
+}
+
+/* Navbar */
+
+body.light-mode .navbar {
+  background: rgba(248, 250, 252, 0.92);
+
+  border-bottom-color: #e2e8f0;
+}
+
+body.light-mode .logo {
+  color: #0f172a;
+}
+
+body.light-mode .nav-links a {
+  color: #475569;
+}
+
+body.light-mode .nav-links a:hover,
+body.light-mode .nav-links a.active-link {
+  color: #2563eb;
+}
+
+body.light-mode .theme-btn {
+  background: #ffffff;
+
+  border-color: #cbd5e1;
+
+  color: #0f172a;
+}
+
+/* Sections */
+
+body.light-mode .home,
+body.light-mode .about-section,
+body.light-mode .contact-section {
+  background: #f8fafc;
+}
+
+body.light-mode .skills-section,
+body.light-mode .projects-section {
+  background: #f1f5f9;
+}
+
+/* Headings */
+
+body.light-mode .home h1,
+body.light-mode .section-title h2,
+body.light-mode .about-card h3,
+body.light-mode .info-item h3,
+body.light-mode .skill-card h3,
+body.light-mode .project-card h3,
+body.light-mode .contact-text h3 {
+  color: #0f172a;
+}
+
+body.light-mode .home h2 {
+  color: #334155;
+}
+
+/* Paragraphs */
+
+body.light-mode .home-description,
+body.light-mode .about-card p,
+body.light-mode .skill-card p,
+body.light-mode .project-card p,
+body.light-mode .contact-text > p {
+  color: #475569;
+}
+
+/* Cards */
+
+body.light-mode .about-card,
+body.light-mode .info-card,
+body.light-mode .skill-card,
+body.light-mode .project-card,
+body.light-mode .contact-form {
+  background: #ffffff;
+
+  border-color: #e2e8f0;
+}
+
+/* Skill Progress */
+
+body.light-mode .skill-progress {
+  background: #e2e8f0;
+}
+
+/* Technology Tags */
+
+body.light-mode .technologies span {
+  background: #f8fafc;
+
+  border-color: #e2e8f0;
+
+  color: #475569;
+}
+
+/* Contact */
+
+body.light-mode .contact-info-item > span {
+  background: #ffffff;
+
+  border-color: #e2e8f0;
+}
+
+body.light-mode .contact-info-item p {
+  color: #334155;
+}
+
+body.light-mode .contact-form input,
+body.light-mode .contact-form textarea {
+  background: #f8fafc;
+
+  border-color: #e2e8f0;
+
+  color: #0f172a;
+}
+
+body.light-mode .contact-form input::placeholder,
+body.light-mode .contact-form textarea::placeholder {
+  color: #94a3b8;
+}
+
+/* Profile */
+
+body.light-mode .profile-circle {
+  background: linear-gradient(145deg, #ffffff, #e2e8f0);
+
+  border-color: #cbd5e1;
+}
+
+body.light-mode .profile-tag {
+  background: #ffffff;
+
+  border-color: #e2e8f0;
+
+  color: #475569;
+}
+
+/* Project Buttons */
+
+body.light-mode .project-btn {
+  border-color: #cbd5e1;
+
+  color: #334155;
+}
+
+body.light-mode .project-btn:hover {
+  color: #ffffff;
+}
+
+/* Footer */
+
+body.light-mode footer {
+  background: #e2e8f0;
+
+  color: #475569;
+}

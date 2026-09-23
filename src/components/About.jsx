@@ -1,3 +1,4 @@
+import "../styles/About.css";
 function About() {
   return (
     <section className="section about-section" id="about">

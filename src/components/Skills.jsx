@@ -1,3 +1,4 @@
+import "../styles/Skills.css";
 function Skills() {
   const skills = [
     {

@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-
+import "../styles/Navbar.css";
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [active, setActive] = useState("home");
