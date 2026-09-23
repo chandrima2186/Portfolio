@@ -15,13 +15,7 @@ function Projects() {
         "A responsive personal portfolio website designed to showcase my skills, projects and academic journey.",
       technologies: "React • JavaScript • CSS"
     },
-    {
-      number: "03",
-      title: "Student Management System",
-      description:
-        "A simple system designed to manage student information and academic records.",
-      technologies: "Java • OOP • MySQL"
-    }
+   
   ];
 
   return (
