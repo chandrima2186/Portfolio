@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [active, setActive] = useState("home");
+  const [lightMode, setLightMode] = useState(false);
 
   useEffect(() => {
     const sections = document.querySelectorAll("section");
@@ -25,11 +26,23 @@ function Navbar() {
     return () => observer.disconnect();
   }, []);
 
+  useEffect(() => {
+    document.body.classList.toggle("light-mode", lightMode);
+  }, [lightMode]);
+
   return (
     <nav className="navbar">
       <a href="#home" className="logo">
         Priya<span>.</span>
       </a>
+
+      <button
+        className="theme-btn"
+        onClick={() => setLightMode(!lightMode)}
+        aria-label="Toggle theme"
+      >
+        {lightMode ? "☀" : "☾"}
+      </button>
 
       <button
         className="menu-btn"

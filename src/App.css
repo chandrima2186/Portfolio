@@ -1025,3 +1025,53 @@ footer {
 footer p {
   margin: 0;
 }
+
+/* ================= THEME TOGGLE ================= */
+
+.theme-btn {
+  background: #111827;
+  border: 1px solid #1e293b;
+  color: #f8fafc;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.theme-btn:hover {
+  border-color: #60a5fa;
+  color: #60a5fa;
+}
+
+/* Light Mode */
+
+body.light-mode {
+  background: #f8fafc;
+  color: #0f172a;
+}
+
+body.light-mode .navbar {
+  background: rgba(248, 250, 252, 0.92);
+  border-bottom-color: #e2e8f0;
+}
+
+body.light-mode .logo {
+  color: #0f172a;
+}
+
+body.light-mode .nav-links a {
+  color: #475569;
+}
+
+body.light-mode .nav-links a:hover,
+body.light-mode .nav-links a.active-link {
+  color: #2563eb;
+}
+
+body.light-mode .theme-btn {
+  background: #ffffff;
+  border-color: #cbd5e1;
+  color: #0f172a;
+}
