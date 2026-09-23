@@ -1,4 +1,3 @@
-
 function Home() {
   return (
     <section className="home" id="home">
@@ -11,9 +10,9 @@ function Home() {
 
         <h2>Computer Science Student</h2>
 
-        <p>
+        <p className="home-description">
           I am passionate about programming, web development
-          and creating simple and useful digital experiences.
+          and creating simple, useful digital experiences.
         </p>
 
         <div className="home-buttons">
@@ -25,11 +24,33 @@ function Home() {
             Contact Me
           </a>
         </div>
+
+        <div className="home-social">
+          <a
+            href="https://github.com/chandrima2186"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub
+          </a>
+
+          <span>•</span>
+
+          <a href="#contact">
+            Contact
+          </a>
+        </div>
       </div>
 
       <div className="home-image">
-        <div className="profile-circle">
-          <span>P</span>
+        <div className="profile-wrapper">
+          <div className="profile-circle">
+            <span>P</span>
+          </div>
+
+          <div className="profile-tag">
+            <span>●</span> Available for opportunities
+          </div>
         </div>
       </div>
     </section>
