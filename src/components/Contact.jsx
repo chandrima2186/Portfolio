@@ -8,16 +8,39 @@ function Contact() {
 
       <div className="contact-content">
         <div className="contact-text">
-          <h3>Let's work together.</h3>
+          <span className="contact-label">LET'S CONNECT</span>
+
+          <h3>Have a project in mind?</h3>
 
           <p>
             If you have a project, question or just want to
-            say hello, feel free to contact me.
+            say hello, feel free to send me a message.
           </p>
 
           <div className="contact-info">
-            <p>📧 chandrimapriya520@gmail.com</p>
-            <p>📍 Sylhet, Bangladesh</p>
+            <div className="contact-info-item">
+              <span>✉</span>
+              <div>
+                <small>Email</small>
+                <p>Send me a message through the form</p>
+              </div>
+            </div>
+
+            <div className="contact-info-item">
+              <span>⌖</span>
+              <div>
+                <small>Location</small>
+                <p>Sylhet, Bangladesh</p>
+              </div>
+            </div>
+
+            <div className="contact-info-item">
+              <span>↗</span>
+              <div>
+                <small>Open to</small>
+                <p>Projects & Learning Opportunities</p>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -26,28 +49,43 @@ function Contact() {
           action="https://formspree.io/f/xaenjllr"
           method="POST"
         >
-          <input
-            type="text"
-            name="name"
-            placeholder="Your Name"
-            required
-          />
+          <div className="form-group">
+            <label htmlFor="name">Your Name</label>
 
-          <input
-            type="email"
-            name="email"
-            placeholder="Your Email"
-            required
-          />
+            <input
+              id="name"
+              type="text"
+              name="name"
+              placeholder="Enter your name"
+              required
+            />
+          </div>
 
-          <textarea
-            name="message"
-            placeholder="Your Message"
-            required
-          ></textarea>
+          <div className="form-group">
+            <label htmlFor="email">Your Email</label>
+
+            <input
+              id="email"
+              type="email"
+              name="email"
+              placeholder="Enter your email"
+              required
+            />
+          </div>
+
+          <div className="form-group">
+            <label htmlFor="message">Your Message</label>
+
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Write your message..."
+              required
+            ></textarea>
+          </div>
 
           <button type="submit" className="btn">
-            Send Message
+            Send Message ↗
           </button>
         </form>
       </div>
