@@ -3,43 +3,43 @@ function Skills() {
     {
       name: "HTML",
       category: "Frontend",
-      level: 90,
+      level: 70,
       description: "Building structured and semantic web pages."
     },
     {
       name: "CSS",
       category: "Frontend",
-      level: 85,
+      level: 65,
       description: "Creating responsive and attractive user interfaces."
     },
     {
       name: "JavaScript",
       category: "Frontend",
-      level: 80,
+      level: 70,
       description: "Adding interaction and dynamic functionality."
     },
     {
       name: "React",
       category: "Frontend",
-      level: 70,
+      level: 60,
       description: "Building component-based web applications."
     },
     {
       name: "C / C++",
       category: "Programming",
-      level: 80,
+      level: 90,
       description: "Problem solving and fundamental programming."
     },
     {
       name: "Java",
       category: "Programming",
-      level: 75,
+      level: 80,
       description: "Object-oriented programming and application development."
     },
     {
       name: "MySQL",
       category: "Database",
-      level: 75,
+      level: 95,
       description: "Designing and managing relational databases."
     },
     {
