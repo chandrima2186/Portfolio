@@ -1075,3 +1075,117 @@ body.light-mode .theme-btn {
   border-color: #cbd5e1;
   color: #0f172a;
 }
+
+/* ================= COMPLETE LIGHT MODE ================= */
+
+body.light-mode .home,
+body.light-mode .about-section,
+body.light-mode .contact-section {
+  background: #f8fafc;
+}
+
+body.light-mode .skills-section,
+body.light-mode .projects-section {
+  background: #f1f5f9;
+}
+
+body.light-mode .home h1,
+body.light-mode .section-title h2,
+body.light-mode .about-card h3,
+body.light-mode .info-item h3,
+body.light-mode .skill-card h3,
+body.light-mode .project-card h3,
+body.light-mode .contact-text h3 {
+  color: #0f172a;
+}
+
+body.light-mode .home h2 {
+  color: #334155;
+}
+
+body.light-mode .home-description,
+body.light-mode .about-card p,
+body.light-mode .skill-card p,
+body.light-mode .project-card p,
+body.light-mode .contact-text > p {
+  color: #475569;
+}
+
+/* Cards */
+
+body.light-mode .about-card,
+body.light-mode .info-card,
+body.light-mode .skill-card,
+body.light-mode .project-card,
+body.light-mode .contact-form {
+  background: #ffffff;
+  border-color: #e2e8f0;
+}
+
+/* Skill progress */
+
+body.light-mode .skill-progress {
+  background: #e2e8f0;
+}
+
+/* Technology tags */
+
+body.light-mode .technologies span {
+  background: #f8fafc;
+  border-color: #e2e8f0;
+  color: #475569;
+}
+
+/* Contact */
+
+body.light-mode .contact-info-item > span {
+  background: #ffffff;
+  border-color: #e2e8f0;
+}
+
+body.light-mode .contact-info-item p {
+  color: #334155;
+}
+
+body.light-mode .contact-form input,
+body.light-mode .contact-form textarea {
+  background: #f8fafc;
+  border-color: #e2e8f0;
+  color: #0f172a;
+}
+
+body.light-mode .contact-form input::placeholder,
+body.light-mode .contact-form textarea::placeholder {
+  color: #94a3b8;
+}
+
+/* Profile */
+
+body.light-mode .profile-circle {
+  background: linear-gradient(145deg, #ffffff, #e2e8f0);
+  border-color: #cbd5e1;
+}
+
+body.light-mode .profile-tag {
+  background: #ffffff;
+  border-color: #e2e8f0;
+  color: #475569;
+}
+
+/* Project buttons */
+
+body.light-mode .project-btn {
+  border-color: #cbd5e1;
+  color: #334155;
+}
+
+body.light-mode .project-btn:hover {
+  color: #ffffff;
+}
+
+/* Footer */
+
+body.light-mode footer {
+  background: #e2e8f0;
+  color: #475569;
+}
