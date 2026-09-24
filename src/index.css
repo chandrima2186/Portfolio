@@ -118,6 +118,10 @@ code {
   transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
+.reveal + .reveal {
+  margin-top: 30px;
+}
+
 .reveal.show {
   opacity: 1;
   transform: translateY(0);

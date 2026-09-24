@@ -19,7 +19,8 @@ a {
 /* Common Section */
 
 .section {
-  padding: 90px 8%;
+  padding: 110px 8%;
+  margin-bottom: 20px;
 }
 
 .section-title {

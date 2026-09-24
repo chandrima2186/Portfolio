@@ -33,16 +33,22 @@
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 45px;
+  gap: 35px;
+  margin-left: auto;
+  margin-right: 25px;
 }
 
 .nav-links a {
   position: relative;
 
+  display: inline-block;
+
   color: #94a3b8;
   text-decoration: none;
   font-size: 14px;
   font-weight: 500;
+
+    white-space: nowrap;
 
   transition: 0.3s;
 }
