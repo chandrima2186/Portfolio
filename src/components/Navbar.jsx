@@ -82,6 +82,14 @@ function Navbar() {
   Education
 </a>
 
+<a
+  href="#journey"
+  className={active === "journey" ? "active-link" : ""}
+  onClick={() => setMenuOpen(false)}
+>
+  Journey
+</a>
+
           Skills
         </a>
 
