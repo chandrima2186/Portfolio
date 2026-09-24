@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import "../styles/Navbar.css";
+
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [active, setActive] = useState("home");
@@ -30,11 +31,48 @@ function Navbar() {
     document.body.classList.toggle("light-mode", lightMode);
   }, [lightMode]);
 
+  const closeMenu = () => {
+    setMenuOpen(false);
+  };
+
   return (
     <nav className="navbar">
+
       <a href="#home" className="logo">
         Priya<span>.</span>
       </a>
+
+      <div className={menuOpen ? "nav-links active" : "nav-links"}>
+
+        <a href="#home" className={active === "home" ? "active-link" : ""} onClick={closeMenu}>
+          Home
+        </a>
+
+        <a href="#about" className={active === "about" ? "active-link" : ""} onClick={closeMenu}>
+          About
+        </a>
+
+        <a href="#education" className={active === "education" ? "active-link" : ""} onClick={closeMenu}>
+          Education
+        </a>
+
+        <a href="#journey" className={active === "journey" ? "active-link" : ""} onClick={closeMenu}>
+          Journey
+        </a>
+
+        <a href="#skills" className={active === "skills" ? "active-link" : ""} onClick={closeMenu}>
+          Skills
+        </a>
+
+        <a href="#projects" className={active === "projects" ? "active-link" : ""} onClick={closeMenu}>
+          Projects
+        </a>
+
+        <a href="#contact" className={active === "contact" ? "active-link" : ""} onClick={closeMenu}>
+          Contact
+        </a>
+
+      </div>
 
       <button
         className="theme-btn"
@@ -52,63 +90,6 @@ function Navbar() {
         ☰
       </button>
 
-      <div className={menuOpen ? "nav-links active" : "nav-links"}>
-        <a
-          href="#home"
-          className={active === "home" ? "active-link" : ""}
-          onClick={() => setMenuOpen(false)}
-        >
-          Home
-        </a>
-
-        <a
-          href="#about"
-          className={active === "about" ? "active-link" : ""}
-          onClick={() => setMenuOpen(false)}
-        >
-          About
-        </a>
-
-        <a
-          href="#skills"
-          className={active === "skills" ? "active-link" : ""}
-          onClick={() => setMenuOpen(false)}
-        >
-        <a
-  href="#education"
-  className={active === "education" ? "active-link" : ""}
-  onClick={() => setMenuOpen(false)}
->
-  Education
-</a>
-
-<a
-  href="#journey"
-  className={active === "journey" ? "active-link" : ""}
-  onClick={() => setMenuOpen(false)}
->
-  Journey
-</a>
-
-          Skills
-        </a>
-
-        <a
-          href="#projects"
-          className={active === "projects" ? "active-link" : ""}
-          onClick={() => setMenuOpen(false)}
-        >
-          Projects
-        </a>
-
-        <a
-          href="#contact"
-          className={active === "contact" ? "active-link" : ""}
-          onClick={() => setMenuOpen(false)}
-        >
-          Contact
-        </a>
-      </div>
     </nav>
   );
 }
