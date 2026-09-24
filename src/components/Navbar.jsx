@@ -74,6 +74,14 @@ function Navbar() {
           className={active === "skills" ? "active-link" : ""}
           onClick={() => setMenuOpen(false)}
         >
+        <a
+  href="#education"
+  className={active === "education" ? "active-link" : ""}
+  onClick={() => setMenuOpen(false)}
+>
+  Education
+</a>
+
           Skills
         </a>
 
