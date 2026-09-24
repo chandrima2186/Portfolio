@@ -2,7 +2,9 @@
 
 .journey-section {
   background: #0f172a;
-}
+  padding-top: 100px;
+  padding-bottom: 100px;
+} 
 
 .journey-timeline {
   position: relative;
