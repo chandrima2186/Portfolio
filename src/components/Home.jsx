@@ -1,59 +1,127 @@
 import "../styles/Home.css";
+
 function Home() {
   return (
     <section className="home" id="home">
-      <div className="home-text">
-        <p className="small-title">WELCOME TO MY PORTFOLIO</p>
 
-        <h1>
-          Hi, I'm <span>Priya</span>
-        </h1>
+      <div className="home-content">
 
-        <h2>Computer Science Student</h2>
+        {/* LEFT CONTENT */}
+        <div className="home-text">
 
-        <p className="home-description">
-          I am passionate about programming, web development
-          and creating simple, useful digital experiences.
-        </p>
+          <p className="small-title">
+            WELCOME TO MY PORTFOLIO
+          </p>
 
-        <div className="home-buttons">
-          <a href="#projects" className="btn">
-            View My Work
-          </a>
+          <h1>
+            Hi, I'm <span>Priya</span>
+          </h1>
 
-          <a href="#contact" className="btn outline">
-            Contact Me
-          </a>
-        </div>
+          <h2>
+            Computer Science Student
+          </h2>
 
-        <div className="home-social">
-          <a
-            href="https://github.com/chandrima2186"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            GitHub
-          </a>
+          <p className="home-description">
+            I am passionate about programming, web development
+            and creating simple, useful digital experiences.
+          </p>
 
-          <span>•</span>
+          <div className="home-buttons">
 
-          <a href="#contact">
-            Contact
-          </a>
-        </div>
-      </div>
+            <a href="#projects" className="btn">
+              View My Work
+            </a>
 
-      <div className="home-image">
-        <div className="profile-wrapper">
-          <div className="profile-circle">
-            <span>P</span>
+            <a href="#contact" className="btn outline">
+              Contact Me
+            </a>
+
           </div>
 
-          <div className="profile-tag">
-            <span>●</span> Available for opportunities
+          <div className="home-social">
+
+            <a
+              href="https://github.com/chandrima2186"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub
+            </a>
+
+            <span>•</span>
+
+            <a href="#contact">
+              Contact
+            </a>
+
           </div>
+
         </div>
+
+        {/* PROFILE CARD */}
+        <div className="home-profile">
+
+          <div className="profile-card">
+
+            <div className="profile-top">
+
+              <div className="profile-circle">
+                <span>P</span>
+              </div>
+
+              <div className="available">
+                <span></span>
+                Available
+              </div>
+
+            </div>
+
+            <h3>Priya</h3>
+
+            <p className="profile-role">
+              Computer Science Student
+            </p>
+
+            <div className="profile-line"></div>
+
+            <div className="profile-details">
+
+              <div>
+                <span className="detail-icon">✉</span>
+                <div>
+                  <small>Email</small>
+                  <p>Contact me</p>
+                </div>
+              </div>
+
+              <div>
+                <span className="detail-icon">⌂</span>
+                <div>
+                  <small>Location</small>
+                  <p>Bangladesh</p>
+                </div>
+              </div>
+
+              <div>
+                <span className="detail-icon">◆</span>
+                <div>
+                  <small>Focus</small>
+                  <p>Web Development</p>
+                </div>
+              </div>
+
+            </div>
+
+            <a href="#contact" className="profile-contact">
+              Let's Connect →
+            </a>
+
+          </div>
+
+        </div>
+
       </div>
+
     </section>
   );
 }
