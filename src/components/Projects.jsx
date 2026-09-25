@@ -1,4 +1,5 @@
 import "../styles/Projects.css";
+
 function Projects() {
   const projects = [
     {
@@ -18,6 +19,24 @@ function Projects() {
       technologies: ["React", "JavaScript", "CSS"],
       github: "https://github.com/chandrima2186/portfolio",
       live: "https://portfolio-flame-phi-60.vercel.app/"
+    },
+    {
+      number: "03",
+      title: "Smart Attendance System",
+      description:
+        "A microprocessor-based attendance system designed to record and manage student attendance using RFID technology.",
+      technologies: ["Arduino", "RFID", "C/C++"],
+      github: "https://github.com/chandrima2186/Smart-attendance-system",
+      live: ""
+    },
+    {
+      number: "04",
+      title: "Quiz Game",
+      description:
+        "A Java-based quiz game with multiple questions, answer selection and score tracking.",
+      technologies: ["Java", "OOP"],
+      github: "https://github.com/chandrima2186/Quiz-game-",
+      live: ""
     }
   ];
 
