@@ -19,12 +19,7 @@ function Skills() {
       level: 70,
       description: "Adding interaction and dynamic functionality."
     },
-    {
-      name: "React",
-      category: "Frontend",
-      level: 60,
-      description: "Building component-based web applications."
-    },
+    
     {
       name: "C / C++",
       category: "Programming",
@@ -43,12 +38,7 @@ function Skills() {
       level: 95,
       description: "Designing and managing relational databases."
     },
-    {
-      name: "Git",
-      category: "Tools",
-      level: 70,
-      description: "Managing and tracking project code."
-    }
+    
   ];
 
   return (
