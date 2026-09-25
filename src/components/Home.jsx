@@ -6,7 +6,6 @@ function Home() {
 
       <div className="home-content">
 
-        {/* LEFT CONTENT */}
         <div className="home-text">
 
           <p className="small-title">
@@ -52,68 +51,6 @@ function Home() {
 
             <a href="#contact">
               Contact
-            </a>
-
-          </div>
-
-        </div>
-
-        {/* PROFILE CARD */}
-        <div className="home-profile">
-
-          <div className="profile-card">
-
-            <div className="profile-top">
-
-              <div className="profile-circle">
-                <span>P</span>
-              </div>
-
-              <div className="available">
-                <span></span>
-                Available
-              </div>
-
-            </div>
-
-            <h3>Priya</h3>
-
-            <p className="profile-role">
-              Computer Science Student
-            </p>
-
-            <div className="profile-line"></div>
-
-            <div className="profile-details">
-
-              <div>
-                <span className="detail-icon">✉</span>
-                <div>
-                  <small>Email</small>
-                  <p>Contact me</p>
-                </div>
-              </div>
-
-              <div>
-                <span className="detail-icon">⌂</span>
-                <div>
-                  <small>Location</small>
-                  <p>Bangladesh</p>
-                </div>
-              </div>
-
-              <div>
-                <span className="detail-icon">◆</span>
-                <div>
-                  <small>Focus</small>
-                  <p>Web Development</p>
-                </div>
-              </div>
-
-            </div>
-
-            <a href="#contact" className="profile-contact">
-              Let's Connect →
             </a>
 
           </div>
