@@ -18,7 +18,7 @@ function Navbar() {
         });
       },
       {
-        threshold: 0.5,
+        threshold: 0.4,
       }
     );
 
@@ -36,51 +36,124 @@ function Navbar() {
   };
 
   return (
-    <nav className="navbar">
+    <nav className={menuOpen ? "navbar mobile-open" : "navbar"}>
 
-      <a href="#home" className="logo">
-        Priya<span>.</span>
-      </a>
+      {/* PROFILE */}
 
-      <div className={menuOpen ? "nav-links active" : "nav-links"}>
+      <div className="sidebar-profile">
 
-        <a href="#home" className={active === "home" ? "active-link" : ""} onClick={closeMenu}>
+        <div className="sidebar-avatar">
+          <span>P</span>
+        </div>
+
+        <h2>Priya</h2>
+
+        <p>Computer Science Student</p>
+
+        <div className="sidebar-status">
+          <span></span>
+          Available for opportunities
+        </div>
+
+      </div>
+
+      {/* NAVIGATION */}
+
+      <div className="nav-heading">
+        MENU
+      </div>
+
+      <div className="nav-links">
+
+        <a
+          href="#home"
+          className={active === "home" ? "active-link" : ""}
+          onClick={closeMenu}
+        >
+          <span>⌂</span>
           Home
         </a>
 
-        <a href="#about" className={active === "about" ? "active-link" : ""} onClick={closeMenu}>
+        <a
+          href="#about"
+          className={active === "about" ? "active-link" : ""}
+          onClick={closeMenu}
+        >
+          <span>●</span>
           About
         </a>
 
-        <a href="#education" className={active === "education" ? "active-link" : ""} onClick={closeMenu}>
+        <a
+          href="#education"
+          className={active === "education" ? "active-link" : ""}
+          onClick={closeMenu}
+        >
+          <span>🎓</span>
           Education
         </a>
 
-        <a href="#journey" className={active === "journey" ? "active-link" : ""} onClick={closeMenu}>
+        <a
+          href="#journey"
+          className={active === "journey" ? "active-link" : ""}
+          onClick={closeMenu}
+        >
+          <span>↗</span>
           Journey
         </a>
 
-        <a href="#skills" className={active === "skills" ? "active-link" : ""} onClick={closeMenu}>
+        <a
+          href="#skills"
+          className={active === "skills" ? "active-link" : ""}
+          onClick={closeMenu}
+        >
+          <span>◆</span>
           Skills
         </a>
 
-        <a href="#projects" className={active === "projects" ? "active-link" : ""} onClick={closeMenu}>
+        <a
+          href="#projects"
+          className={active === "projects" ? "active-link" : ""}
+          onClick={closeMenu}
+        >
+          <span>▣</span>
           Projects
         </a>
 
-        <a href="#contact" className={active === "contact" ? "active-link" : ""} onClick={closeMenu}>
+        <a
+          href="#contact"
+          className={active === "contact" ? "active-link" : ""}
+          onClick={closeMenu}
+        >
+          <span>✉</span>
           Contact
         </a>
 
       </div>
 
-      <button
-        className="theme-btn"
-        onClick={() => setLightMode(!lightMode)}
-        aria-label="Toggle theme"
-      >
-        {lightMode ? "☀" : "☾"}
-      </button>
+      {/* SIDEBAR FOOTER */}
+
+      <div className="sidebar-footer">
+
+        <a
+          href="https://github.com/chandrima2186"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="sidebar-social"
+        >
+          GitHub ↗
+        </a>
+
+        <button
+          className="theme-btn"
+          onClick={() => setLightMode(!lightMode)}
+          aria-label="Toggle theme"
+        >
+          {lightMode ? "☀" : "☾"}
+        </button>
+
+      </div>
+
+      {/* MOBILE MENU */}
 
       <button
         className="menu-btn"
