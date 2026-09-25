@@ -244,3 +244,39 @@ body.light-mode .skill-bottom span:last-child {
     font-size: 22px;
   }
 }
+
+/* ================= SKILL ICON ================= */
+
+.skill-icon {
+  width: 52px;
+  height: 52px;
+  margin-top: 22px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid #8b5cf6;
+  border-radius: 12px;
+
+  color: #c084fc;
+  background: rgba(139, 92, 246, 0.08);
+
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+
+  transition: 0.35s ease;
+}
+
+.skill-card:hover .skill-icon {
+  transform: scale(1.08);
+  background: rgba(139, 92, 246, 0.15);
+  box-shadow: 0 0 18px rgba(139, 92, 246, 0.15);
+}
+
+body.light-mode .skill-icon {
+  color: #7c3aed;
+  background: #f5f3ff;
+  border-color: #a78bfa;
+}

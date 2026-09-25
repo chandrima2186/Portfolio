@@ -5,16 +5,29 @@
   scroll-behavior: smooth;
 }
 
+html {
+  width: 100%;
+  overflow-x: hidden;
+}
+
 body {
   margin: 0;
+  width: 100%;
   font-family: "Segoe UI", Arial, sans-serif;
   background: #0b1020;
   color: #f8fafc;
   line-height: 1.6;
+  overflow-x: hidden;
 }
 
 a {
   text-decoration: none;
+}
+
+img,
+video,
+iframe {
+  max-width: 100%;
 }
 
 /* ================= COMMON SECTION ================= */
@@ -110,20 +123,26 @@ footer p {
 @media (max-width: 650px) {
 
   .section {
-    padding: 80px 5%;
+    padding: 70px 5%;
     margin-bottom: 15px;
+    overflow: hidden;
   }
 
   .section-title {
     margin-bottom: 35px;
+    max-width: 100%;
   }
 
   .section-title h2 {
     font-size: 32px;
+    max-width: 100%;
+    overflow-wrap: break-word;
   }
 
   .section-title p {
     font-size: 11px;
     letter-spacing: 2px;
+    max-width: 100%;
+    overflow-wrap: break-word;
   }
 }
