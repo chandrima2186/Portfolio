@@ -43,7 +43,7 @@ function Navbar() {
       <div className="sidebar-profile">
 
         <div className="sidebar-avatar">
-          <span>P</span>
+          <img src="/profile.jpg" alt="Priya" />
         </div>
 
         <h2>Priya</h2>

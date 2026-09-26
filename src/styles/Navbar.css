@@ -62,11 +62,15 @@
     0 10px 25px rgba(139, 92, 246, 0.20);
 }
 
-.sidebar-avatar span {
-  color: #ffffff;
+.sidebar-avatar img {
+  width: 100%;
+  height: 100%;
 
-  font-size: 32px;
-  font-weight: 700;
+  object-fit: cover;
+
+  border-radius: 50%;
+
+  display: block;
 }
 
 .sidebar-profile h2 {
