@@ -227,3 +227,10 @@ body.light-mode .home-description {
     max-width: 230px;
   }
 }
+
+.visitor-greeting {
+  font-size: 18px;
+  font-weight: 600;
+  color: #38bdf8;
+  margin-bottom: 10px;
+}

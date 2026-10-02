@@ -1,4 +1,5 @@
 import "../styles/Home.css";
+import VisitorGreeting from "./VisitorGreeting";
 
 function Home() {
   return (
@@ -7,6 +8,8 @@ function Home() {
       <div className="home-content">
 
         <div className="home-text">
+
+           <VisitorGreeting />
 
           <p className="small-title">
             WELCOME TO MY PORTFOLIO
