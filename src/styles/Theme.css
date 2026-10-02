@@ -1,24 +1,35 @@
 /* ================= THEME TOGGLE ================= */
 
 .theme-btn {
+
   background: linear-gradient(135deg, #8b5cf6, #ec4899);
+
   border: 1px solid #a855f7;
+
   color: #ffffff;
 
   width: 38px;
+
   height: 38px;
+
   border-radius: 50%;
 
   cursor: pointer;
+
   font-size: 18px;
 
   transition: all 0.3s ease;
+
 }
 
 .theme-btn:hover {
+
   transform: rotate(15deg) scale(1.08);
+
   box-shadow: 0 0 20px rgba(236, 72, 153, 0.35);
+
 }
+
 
 /* ================= CARD DESIGN ================= */
 
@@ -29,6 +40,7 @@
 .education-card,
 .journey-card,
 .contact-form {
+
   position: relative;
 
   overflow: hidden;
@@ -41,7 +53,9 @@
     transform 0.35s ease,
     border-color 0.35s ease,
     box-shadow 0.35s ease;
+
 }
+
 
 /* Top gradient line */
 
@@ -51,14 +65,17 @@
 .project-card::before,
 .education-card::before,
 .journey-card::before {
+
   content: "";
 
   position: absolute;
 
   top: 0;
+
   left: 0;
 
   width: 100%;
+
   height: 3px;
 
   background: linear-gradient(
@@ -67,7 +84,9 @@
     #ec4899,
     #14b8a6
   );
+
 }
+
 
 /* Hover */
 
@@ -77,6 +96,7 @@
 .project-card:hover,
 .education-card:hover,
 .journey-card:hover {
+
   transform: translateY(-7px);
 
   border-color: #8b5cf6;
@@ -84,50 +104,76 @@
   box-shadow:
     0 15px 35px rgba(139, 92, 246, 0.16),
     0 0 25px rgba(236, 72, 153, 0.06);
+
 }
+
 
 /* ================= SECTION TITLES ================= */
 
 .section-title p {
-  color: #c084fc;
+
+  color: var(--accent-color);
+
 }
 
 .section-title h2 {
+
   color: #f8fafc;
+
 }
+
 
 /* ================= LIGHT MODE ================= */
 
 body.light-mode {
+
   background: #f8fafc;
+
   color: #0f172a;
+
 }
+
 
 /* Navbar */
 
 body.light-mode .navbar {
+
   background: rgba(248, 250, 252, 0.94);
+
   border-bottom-color: #e2e8f0;
+
 }
 
 body.light-mode .logo {
+
   color: #0f172a;
+
 }
 
 body.light-mode .nav-links a {
+
   color: #475569;
+
 }
 
 body.light-mode .nav-links a:hover,
+
 body.light-mode .nav-links a.active-link {
+
   color: #7c3aed;
+
 }
 
 body.light-mode .theme-btn {
+
   background: linear-gradient(135deg, #8b5cf6, #ec4899);
+
   border-color: #a855f7;
+
   color: #ffffff;
+
 }
+
 
 /* Sections */
 
@@ -136,13 +182,18 @@ body.light-mode .about-section,
 body.light-mode .education-section,
 body.light-mode .journey-section,
 body.light-mode .contact-section {
+
   background: #f8fafc;
+
 }
 
 body.light-mode .skills-section,
 body.light-mode .projects-section {
+
   background: #f1f5f9;
+
 }
+
 
 /* Headings */
 
@@ -155,12 +206,17 @@ body.light-mode .project-card h3,
 body.light-mode .contact-text h3,
 body.light-mode .education-info h3,
 body.light-mode .journey-card h3 {
+
   color: #0f172a;
+
 }
 
 body.light-mode .home h2 {
+
   color: #334155;
+
 }
+
 
 /* Paragraphs */
 
@@ -171,8 +227,11 @@ body.light-mode .project-card p,
 body.light-mode .contact-text > p,
 body.light-mode .education-info p,
 body.light-mode .journey-card p {
+
   color: #475569;
+
 }
+
 
 /* Cards */
 
@@ -183,10 +242,13 @@ body.light-mode .project-card,
 body.light-mode .education-card,
 body.light-mode .journey-card,
 body.light-mode .contact-form {
+
   background: #ffffff;
+
   border-color: #e2e8f0;
 
   box-shadow: 0 8px 25px rgba(15, 23, 42, 0.06);
+
 }
 
 body.light-mode .about-card:hover,
@@ -195,95 +257,145 @@ body.light-mode .skill-card:hover,
 body.light-mode .project-card:hover,
 body.light-mode .education-card:hover,
 body.light-mode .journey-card:hover {
+
   border-color: #a78bfa;
 
   box-shadow:
     0 15px 35px rgba(139, 92, 246, 0.13),
     0 0 20px rgba(236, 72, 153, 0.06);
+
 }
+
 
 /* Education */
 
 body.light-mode .education-info h4 {
+
   color: #334155;
+
 }
 
 body.light-mode .education-icon {
+
   background: #ffffff;
+
   border-color: #e2e8f0;
+
 }
+
 
 /* Journey */
 
 body.light-mode .journey-dot {
+
   background: #ffffff;
+
   border-color: #a78bfa;
+
 }
+
 
 /* Skills */
 
 body.light-mode .skill-progress {
+
   background: #e2e8f0;
+
 }
+
 
 /* Technology Tags */
 
 body.light-mode .technologies span {
+
   background: #f8fafc;
+
   border-color: #e2e8f0;
+
   color: #475569;
+
 }
+
 
 /* Contact */
 
 body.light-mode .contact-info-item > span {
+
   background: #ffffff;
+
   border-color: #e2e8f0;
+
 }
 
 body.light-mode .contact-info-item p {
+
   color: #334155;
+
 }
 
 body.light-mode .contact-form input,
 body.light-mode .contact-form textarea {
+
   background: #f8fafc;
+
   border-color: #e2e8f0;
+
   color: #0f172a;
+
 }
 
 body.light-mode .contact-form input::placeholder,
 body.light-mode .contact-form textarea::placeholder {
+
   color: #94a3b8;
+
 }
+
 
 /* Profile */
 
 body.light-mode .profile-circle {
+
   background: linear-gradient(145deg, #ffffff, #e2e8f0);
+
   border-color: #cbd5e1;
+
 }
 
 body.light-mode .profile-tag {
+
   background: #ffffff;
+
   border-color: #e2e8f0;
+
   color: #475569;
+
 }
+
 
 /* Project Buttons */
 
 body.light-mode .project-btn {
+
   border-color: #cbd5e1;
+
   color: #334155;
+
 }
 
 body.light-mode .project-btn:hover {
+
   color: #ffffff;
+
 }
+
 
 /* Footer */
 
 body.light-mode footer {
+
   background: #e2e8f0;
+
   color: #475569;
+
 }

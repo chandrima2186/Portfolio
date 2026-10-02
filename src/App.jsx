@@ -8,11 +8,11 @@ import Journey from "./components/Journey";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import FunZone from "./components/FunZone";
+import ColorThemePicker from "./components/ColorThemePicker";
 import Contact from "./components/Contact";
 
 import "./styles/Common.css";
 import "./styles/Theme.css";
-
 
 function App() {
   useEffect(() => {
@@ -48,13 +48,13 @@ function App() {
         <About />
       </div>
 
-<div className="reveal">
-  <Education />
-</div>
+      <div className="reveal">
+        <Education />
+      </div>
 
-<div className="reveal">
-  <Journey />
-</div>
+      <div className="reveal">
+        <Journey />
+      </div>
 
       <div className="reveal">
         <Skills />
@@ -65,8 +65,12 @@ function App() {
       </div>
 
       <div className="reveal">
-  <FunZone />
-</div>
+        <FunZone />
+      </div>
+
+      <div className="reveal">
+        <ColorThemePicker />
+      </div>
 
       <div className="reveal">
         <Contact />

@@ -1,5 +1,9 @@
 /* ================= COMMON ================= */
 
+:root {
+  --accent-color: #38bdf8;
+}
+
 * {
   box-sizing: border-box;
   scroll-behavior: smooth;
@@ -46,7 +50,7 @@ iframe {
 .section-title p {
   margin: 0 0 8px;
 
-  color: #c084fc;
+  color: var(--accent-color);
   letter-spacing: 3px;
   font-size: 12px;
   font-weight: 700;
@@ -68,8 +72,13 @@ iframe {
 
   padding: 12px 24px;
 
-  background: linear-gradient(135deg, #8b5cf6, #ec4899);
-  border: 1px solid #a855f7;
+  background: linear-gradient(
+    135deg,
+    var(--accent-color),
+    #ec4899
+  );
+
+  border: 1px solid var(--accent-color);
   border-radius: 8px;
 
   color: #ffffff;
@@ -91,12 +100,17 @@ iframe {
 
 .btn.outline {
   background: transparent;
-  color: #c084fc;
-  border-color: #8b5cf6;
+  color: var(--accent-color);
+  border-color: var(--accent-color);
 }
 
 .btn.outline:hover {
-  background: linear-gradient(135deg, #8b5cf6, #ec4899);
+  background: linear-gradient(
+    135deg,
+    var(--accent-color),
+    #ec4899
+  );
+
   color: #ffffff;
 }
 
