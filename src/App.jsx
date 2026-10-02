@@ -7,6 +7,7 @@ import Education from "./components/Education";
 import Journey from "./components/Journey";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
+import FunZone from "./components/FunZone";
 import Contact from "./components/Contact";
 
 import "./styles/Common.css";
@@ -62,6 +63,10 @@ function App() {
       <div className="reveal">
         <Projects />
       </div>
+
+      <div className="reveal">
+  <FunZone />
+</div>
 
       <div className="reveal">
         <Contact />

@@ -1,8 +1,8 @@
-import "../styles/About.css";
-function About() {
-  return (
-    <section className="section about-section" id="about">
-      <div className="section-title">
+import "../styles/About.css";  //about section er design/style apply er jonno about.css import korechi
+function About() { //about er jonno react comp. make korsi
+  return (  // comp. er vitorer ui dekhar jonno
+    <section className="section about-section" id="about"> 
+      <div className="section-title">  
         <p>GET TO KNOW ME</p>
         <h2>About Me</h2>
       </div>
