@@ -1,5 +1,6 @@
 import "../styles/Home.css";
 import VisitorGreeting from "./VisitorGreeting";
+import TypingText from "./TypingText";
 
 function Home() {
   return (
@@ -9,7 +10,7 @@ function Home() {
 
         <div className="home-text">
 
-           <VisitorGreeting />
+          <VisitorGreeting />
 
           <p className="small-title">
             WELCOME TO MY PORTFOLIO
@@ -19,9 +20,7 @@ function Home() {
             Hi, I'm <span>Priya</span>
           </h1>
 
-          <h2>
-            Computer Science Student
-          </h2>
+          <TypingText />
 
           <p className="home-description">
             I am passionate about programming, web development

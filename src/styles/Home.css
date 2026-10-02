@@ -234,3 +234,30 @@ body.light-mode .home-description {
   color: white;
   margin-bottom: 10px;
 }
+
+/* ================= TYPING ANIMATION ================= */
+
+.typing-text {
+  min-height: 42px;
+  color: var(--accent-color);
+}
+
+.typing-cursor {
+  display: inline-block;
+  margin-left: 3px;
+  color: var(--accent-color);
+  font-weight: 400;
+  animation: blinkCursor 0.7s infinite;
+}
+
+@keyframes blinkCursor {
+  0%,
+  50% {
+    opacity: 1;
+  }
+
+  51%,
+  100% {
+    opacity: 0;
+  }
+}
